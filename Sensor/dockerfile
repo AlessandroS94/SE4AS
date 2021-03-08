@@ -1,0 +1,5 @@
+FROM python:latest
+RUN  mkdir -p /app
+COPY ./src/ /app/
+
+CMD [ "python", "./app/sensor.py" ]
