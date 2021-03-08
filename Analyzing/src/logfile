@@ -1,0 +1,30 @@
+2021-03-08 15:19:44,903 INFO     Connected to MQTT Broker!
+2021-03-08 15:19:46,464 INFO     Received `37` from `/sensor/HR` topic
+2021-03-08 15:19:49,466 INFO     Received `57` from `/sensor/HR` topic
+2021-03-08 15:19:52,470 INFO     Received `144` from `/sensor/HR` topic
+2021-03-08 15:19:55,473 INFO     Received `62` from `/sensor/HR` topic
+2021-03-08 15:25:34,253 INFO     Connected to MQTT Broker!
+2021-03-08 15:25:34,866 INFO     Received `11` from `/sensor/HR` topic
+2021-03-08 15:25:34,868 INFO     Received `39` from `/sensor/TEMP` topic
+2021-03-08 15:25:34,868 INFO     Received `14` from `/sensor/BLANKET` topic
+2021-03-08 15:25:37,869 INFO     Received `157` from `/sensor/HR` topic
+2021-03-08 15:25:37,869 INFO     Received `39` from `/sensor/TEMP` topic
+2021-03-08 15:25:37,869 INFO     Received `27` from `/sensor/BLANKET` topic
+2021-03-08 15:25:40,874 INFO     Received `47` from `/sensor/HR` topic
+2021-03-08 15:25:40,874 INFO     Received `42` from `/sensor/TEMP` topic
+2021-03-08 15:25:40,875 INFO     Received `71` from `/sensor/BLANKET` topic
+2021-03-08 15:25:43,875 INFO     Received `159` from `/sensor/HR` topic
+2021-03-08 15:25:43,876 INFO     Received `35` from `/sensor/TEMP` topic
+2021-03-08 15:25:43,876 INFO     Received `57` from `/sensor/BLANKET` topic
+2021-03-08 15:25:46,878 INFO     Received `68` from `/sensor/HR` topic
+2021-03-08 15:25:46,878 INFO     Received `38` from `/sensor/TEMP` topic
+2021-03-08 15:25:46,879 INFO     Received `42` from `/sensor/BLANKET` topic
+2021-03-08 15:25:49,882 INFO     Received `106` from `/sensor/HR` topic
+2021-03-08 15:25:49,883 INFO     Received `37` from `/sensor/TEMP` topic
+2021-03-08 15:25:49,883 INFO     Received `12` from `/sensor/BLANKET` topic
+2021-03-08 15:25:52,885 INFO     Received `84` from `/sensor/HR` topic
+2021-03-08 15:25:52,886 INFO     Received `34` from `/sensor/TEMP` topic
+2021-03-08 15:25:52,886 INFO     Received `33` from `/sensor/BLANKET` topic
+2021-03-08 15:25:55,888 INFO     Received `114` from `/sensor/HR` topic
+2021-03-08 15:25:55,889 INFO     Received `41` from `/sensor/TEMP` topic
+2021-03-08 15:25:55,889 INFO     Received `36` from `/sensor/BLANKET` topic
