@@ -1,14 +1,12 @@
 import csv
-
-i = 0
-row_list = []
-while i < 100:
- row_list = [["Hr", "Temperature", "Contribution"],
-             [1, "Linus Torvalds", "Linux Kernel"],
-             [2, "Tim Berners-Lee", "World Wide Web"],
-             [3, "Guido van Rossum", "Python Programming"]]
-
-
-with open('healt.csv', 'w', newline='') as file:
+import random
+from datetime import datetime
+import time
+with open('health.csv', 'w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerows(row_list)
+    writer.writerow(["Date", "HR", "TEMPERATURE","BLANKET"])
+    i = 0
+    while i < 1000:
+        writer.writerow([datetime.now().timestamp().__int__(), random.randint(20,180), random.randint(34,43),random.randint(0,60)])
+        i = i + 1
+        time.sleep(1)

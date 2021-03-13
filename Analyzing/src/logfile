@@ -28,3 +28,28 @@
 2021-03-08 15:25:55,888 INFO     Received `114` from `/sensor/HR` topic
 2021-03-08 15:25:55,889 INFO     Received `41` from `/sensor/TEMP` topic
 2021-03-08 15:25:55,889 INFO     Received `36` from `/sensor/BLANKET` topic
+2021-03-13 20:07:08,730 INFO     Connected to MQTT Broker!
+2021-03-13 20:07:51,838 INFO     Connected to MQTT Broker!
+2021-03-13 20:08:29,986 INFO     Connected to MQTT Broker!
+2021-03-13 20:10:27,504 INFO     Connected to MQTT Broker!
+2021-03-13 20:10:28,982 INFO     Received `52` from `/sensor/HR` topic
+2021-03-13 20:10:28,982 INFO     Received `37` from `/sensor/TEMP` topic
+2021-03-13 20:10:28,982 INFO     Received `41` from `/sensor/BLANKET` topic
+2021-03-13 20:10:31,986 INFO     Received `20` from `/sensor/HR` topic
+2021-03-13 20:10:31,986 INFO     Received `39` from `/sensor/TEMP` topic
+2021-03-13 20:10:31,986 INFO     Received `52` from `/sensor/BLANKET` topic
+2021-03-13 20:10:34,990 INFO     Received `14` from `/sensor/HR` topic
+2021-03-13 20:10:34,990 INFO     Received `34` from `/sensor/TEMP` topic
+2021-03-13 20:10:34,990 INFO     Received `38` from `/sensor/BLANKET` topic
+2021-03-13 20:10:37,994 INFO     Received `126` from `/sensor/HR` topic
+2021-03-13 20:10:37,994 INFO     Received `41` from `/sensor/TEMP` topic
+2021-03-13 20:10:37,994 INFO     Received `57` from `/sensor/BLANKET` topic
+2021-03-13 20:10:40,998 INFO     Received `173` from `/sensor/HR` topic
+2021-03-13 20:10:40,999 INFO     Received `34` from `/sensor/TEMP` topic
+2021-03-13 20:10:40,999 INFO     Received `78` from `/sensor/BLANKET` topic
+2021-03-13 20:10:44,002 INFO     Received `122` from `/sensor/HR` topic
+2021-03-13 20:10:44,002 INFO     Received `34` from `/sensor/TEMP` topic
+2021-03-13 20:10:44,002 INFO     Received `68` from `/sensor/BLANKET` topic
+2021-03-13 20:10:47,005 INFO     Received `64` from `/sensor/HR` topic
+2021-03-13 20:10:47,005 INFO     Received `37` from `/sensor/TEMP` topic
+2021-03-13 20:10:47,005 INFO     Received `42` from `/sensor/BLANKET` topic
