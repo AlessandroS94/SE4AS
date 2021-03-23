@@ -1,0 +1,16 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>angular-mqtt-client</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <app-dash></app-dash>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,31 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="1" rowHeight="1000px">
+    <mat-grid-tile>
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            INFO
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <h1>{{ title }}</h1>
+            <div>
+              <div>
+                <div style="display: block">
+                  <canvas  baseChart
+                           [datasets]="radarChartData"
+                           [options]="radarChartOptions"
+                           [labels]="radarChartLabels"
+                           [chartType]="radarChartType">
+                  </canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
