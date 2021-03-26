@@ -41,29 +41,18 @@ class Service(threading.Thread):
         def on_message(client, userdata, msg):
             print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
             logging.info(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
-            if msg.topic == "/sensor/HR":
+            if msg.topic == "/channel/BLANKET-sensor":
                 with open(self.dataset, 'a+') as f:
                     f.write("" + datetime.now().timestamp().__int__().__str__())
-                with open('./health.csv', 'a+') as f:
-                    f.write("," + msg.payload.decode())
-            if msg.topic ==  "/sensor/TEMP":
-                with open('./health.csv', 'a+') as f:
-                    f.write("," + msg.payload.decode())
-            if msg.topic == "/sensor/BLANKET":
                 with open('./health.csv', 'a+') as f:
                     f.write("," + msg.payload.decode())
                 with open(self.dataset, 'a+') as f:
                     f.write("\n")
 
-
-        client.subscribe(self.topicHR)
-        client.on_message = on_message
-
-        client.subscribe(self.topicTEMP)
-        client.on_message = on_message
-
         client.subscribe(self.topicBLANKET)
         client.on_message = on_message
+
+
 
 
     def run(self):
@@ -102,14 +91,14 @@ class ML(threading.Thread):
             regsr = LinearRegression()
             regsr.fit(X, y)
             predicted_y = regsr.predict(to_predict_x)
-            result = client.publish("/prediction/BLANKET", str(predicted_y.__int__()))
+            result = client.publish("/channel/BLANKET-prediction", str(predicted_y.__int__()))
             status = result[0]
             if status == 0:
                 print("Predicted blanket value:\n", predicted_y.__int__())
                 logging.info(f"Predicted blanket value: {predicted_y.__int__()}")
             else:
                 logging.info(f"Failed to send message to topic {predicted_y.__int__()}")
-            time.sleep(2)
+            time.sleep(1)
 
     def run(self):
         client = self.connect_mqtt()
@@ -117,7 +106,7 @@ class ML(threading.Thread):
 
 
 
-service = Service('127.0.0.1', 1883, "/sensor/HR", "/sensor/TEMP", "/sensor/BLANKET", "/prediction/BLANKET")
+service = Service('127.0.0.1', 1883, "/channel/HR-sensor", "/channel/TEMP-sensor", "/channel/BLANKET-sensor", "/channel/BLANKET-prediction")
 service.start()
 ml = ML()
 ml.start()

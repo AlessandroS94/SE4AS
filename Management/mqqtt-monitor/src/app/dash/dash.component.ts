@@ -21,10 +21,10 @@ export class DashComponent {
   /** Based on the screen size, switch from standard to one column per row */
   title = 'Dashboard';
   private subscription: Subscription;
-  topicHR = '/sensor/HR';
-  topicBLANKET = '/sensor/BLANKET';
-  topicTEMP = '/sensor/TEMP';
-  topicPredictionBLANKET = '/prediction/BLANKET';
+  topicHR = '/channel/HR-sensor';
+  topicTEMP = '/channel/TEMP-sensor';
+  topicBLANKET = '/channel/BLANKET-sensor';
+  topicPredictionBLANKET = '/channel/BLANKET-prediction';
   msgHR: any;
   msgBLANKED: any;
   msTEMP: any;

@@ -8,6 +8,8 @@ data:
     log_type all
     log_timestamp true
     listener 9001
+    listener 1883
+    allow_anonymous true
 ---
 apiVersion: v1
 kind: Secret
@@ -39,6 +41,7 @@ spec:
           image: eclipse-mosquitto:1.6.2
           ports:
             - containerPort: 1883
+            - containerPort: 9001
           volumeMounts:
             - name: mosquitto-conf
               mountPath: /mosquitto/config
@@ -75,3 +78,4 @@ spec:
           image: eclipse-mosquitto:1.6.2
           ports:
             - containerPort: 1883
+            - containerPort: 9001
