@@ -1,0 +1,5 @@
+---
+  mosquittoDNS: "mosquitto"
+  mosquittoPORT: 1883
+  MINTEMPERATUREBLANKET: 2
+

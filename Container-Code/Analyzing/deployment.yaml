@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: analyzingdeploy
+  labels:
+    app: analyzingapp
+spec:
+  selector:
+    matchLabels:
+      app: analyzingapp
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: analyzingapp
+    spec:
+      containers:
+      - name: analyzingapp
+        image: 03021994/analyzing:latest
+        command: ["python", "./app/analyzing.py"]
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /isAlive
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        resources:
+          requests:
+            memory: "1000Mi"
+            cpu: "1000m"
+          limits:
+            memory: "1500Mi"
+            cpu: "2000m"
