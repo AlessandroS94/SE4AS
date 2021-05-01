@@ -1,7 +1,27 @@
 # SE4AS
 
+MACOS instruction
+
+cd SE4AS
+
+cd Container-Code
+
+cd Mosquitto-Broker && kubectl apply -f Mosquitto2
+
+cd Sensor && kubectl apply -f deployment.yaml
+
+cd Planning && kubectl apply -f deployment.yaml
+
+cd Management && kubectl apply -f deployment.yaml
+
+cd Executing && kubectl apply -f deployment.yaml
+
+cd Analyzing && kubectl apply -f deployment.yaml
+
 After deployed all deployment run this command
 
 kubectl port-forward service/mosquitto 27000:9001
 
-With this command we can connect angular-dashboard to console
+minikube service angular-service
+
+With this command you can connect with the angular-dashboard to console
