@@ -1,5 +1,15 @@
 # SE4AS
 
+[![GoPkg Widget]][GoPkg] [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/569/badge)](https://bestpractices.coreinfrastructure.org/projects/569)
+
+<img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" width="100">
+
+![immagine](https://user-images.githubusercontent.com/27149998/116787367-dda68100-aaa3-11eb-81b5-2cf695e84b67.png)
+
+![immagine](https://user-images.githubusercontent.com/27149998/116787378-f151e780-aaa3-11eb-9ad1-338098a3a565.png)
+
+----
+
 MACOS instruction
 
 cd SE4AS
