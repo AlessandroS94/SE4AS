@@ -1,9 +1,0 @@
-Per la build
-docker build -t sensor-demo .
-
-Per run
-docker run -it sensor-demo sensor.py
-
-
-
-Mosquitto  /usr/local/opt/mosquitto/sbin/mosquitto
