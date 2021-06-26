@@ -5,7 +5,7 @@
 
 ----
 
-MACOS instruction
+MACOS instruction:
 
 cd SE4AS
 
